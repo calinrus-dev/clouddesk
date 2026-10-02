@@ -1,0 +1,6 @@
+{
+  "identifier": "main",
+  "description": "Ventana local de O2 Cloud Desktop",
+  "windows": ["main"],
+  "permissions": ["core:default", "dialog:allow-open", "dialog:allow-save"]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "clouddesk": {
+      "command": "/ABSOLUTE/PATH/clouddesk/scripts/mcp.sh",
+      "args": []
+    }
+  }
+}

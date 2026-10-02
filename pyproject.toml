@@ -1,0 +1,35 @@
+[project]
+name = "o2cloud-desktop-bridge"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "o2cloud-webdav-gateway @ git+https://github.com/garanda21/o2cloud_gateway_webdav.git@995756d4f36e97981f27045fc631b509cf8612b9",
+  "playwright==1.63.0",
+  "mcp==1.30.0",
+  "keyring==25.7.0",
+  "httpx==0.28.1",
+  "filelock>=3.16,<4",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "pytest-asyncio>=0.24,<2", "ruff>=0.13,<1"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bridge"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]

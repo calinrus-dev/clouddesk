@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "CloudDesk",
+  "version": "0.1.0",
+  "identifier": "es.local.o2cloud.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:5178",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [{ "title": "CloudDesk", "width": 1240, "height": 820, "minWidth": 760, "minHeight": 580, "backgroundColor": "#0b1119" }],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; connect-src ipc: http://ipc.localhost; script-src 'self'"
+    }
+  },
+  "bundle": { "active": false }
+}

@@ -1,0 +1,100 @@
+{
+  "o2_authenticated": true,
+  "o2_live_operations": [
+    {
+      "step": "Reuse stored session after service restart",
+      "passed": true
+    },
+    {
+      "step": "Live quota",
+      "passed": true
+    },
+    {
+      "step": "Uploaded metadata",
+      "passed": true
+    },
+    {
+      "step": "Live download checksum",
+      "passed": true
+    },
+    {
+      "step": "Rename synthetic file",
+      "passed": true
+    },
+    {
+      "step": "Create move target",
+      "passed": true
+    },
+    {
+      "step": "Move synthetic file",
+      "passed": true
+    },
+    {
+      "step": "Delete synthetic file to trash",
+      "passed": true
+    },
+    {
+      "step": "Rename test folder",
+      "passed": true
+    },
+    {
+      "step": "Delete test folder to trash",
+      "passed": true
+    }
+  ],
+  "o2_live_media_and_resume": {
+    "image_upload": true,
+    "image_download_checksum": true,
+    "range_offset_32": true,
+    "test_folder_trashed": true
+  },
+  "python_tests": 25,
+  "rust_tests": 1,
+  "rclone_local_integration_passed": true,
+  "mcp_registered_codex": true,
+  "mcp_stdio_tools": 24,
+  "frontend_build_passed": true,
+  "tauri_build_passed": true,
+  "web_check": {
+    "url": "http://localhost:5178",
+    "generatedAt": "2026-10-01T16:56:26.085Z",
+    "profiles": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "errors": [],
+        "status": 200,
+        "title": "CloudDesk · Tus nubes",
+        "canvasCount": 0,
+        "horizontalOverflow": false,
+        "accessibility": []
+      },
+      {
+        "name": "mobile",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "errors": [],
+        "status": 200,
+        "title": "CloudDesk · Tus nubes",
+        "canvasCount": 0,
+        "horizontalOverflow": false,
+        "accessibility": []
+      }
+    ],
+    "limitations": [
+      "Comprobación inicial: no valida interacciones ni rendimiento GPU real.",
+      "El análisis automático de accesibilidad no es exhaustivo."
+    ]
+  },
+  "limitations": [
+    "Drive, OneDrive y Google Fotos requieren conectar y validar sus cuentas.",
+    "Las capturas de navegador usan datos de demostración.",
+    "La aplicación incluye un puente Python y necesita esta carpeta.",
+    "Las subidas O2 y las copias entre nubes no admiten pausa ni reanudación después de reiniciar."
+  ]
+}
